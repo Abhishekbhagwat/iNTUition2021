@@ -3,6 +3,13 @@
   "version": "1.0",
   "description": "Search a video and watch from timestamps where clips are relevant to your search terms.",
   "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "action" : {
+    "default_popup" : "popup.html"
+  },
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
