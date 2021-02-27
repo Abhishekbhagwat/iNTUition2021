@@ -2,5 +2,12 @@
   "name": "Video Context Search",
   "version": "1.0",
   "description": "Search a video and watch from timestamps where clips are relevant to your search terms.",
-  "manifest_version": 3
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["video_context_search.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
