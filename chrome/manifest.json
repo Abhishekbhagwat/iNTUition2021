@@ -9,5 +9,9 @@
       "js": ["video_context_search.js"],
       "run_at": "document_end"
     }
+  ],
+  "host_permissions": [
+    "http://www.localhost:3000/",
+    "https://www.localhost:3000/"
   ]
 }
