@@ -192,7 +192,9 @@ class Searcher:
             captions_extracted.append(timestamps_captions[timestamp])
 
         pretty_print(list(zip(captions_extracted, normalize_time(timestamps))))
-        return list(zip(captions_extracted, normalize_time(timestamps_captions)))
+        # pretty_print(list(zip(captions_extracted, timestamps)))
+        # return list(zip(captions_extracted, normalize_time(timestamps_captions)))
+        return list(zip(captions_extracted, timestamps_captions))
 
 
 # search_engine = Searcher()
@@ -203,9 +205,10 @@ class Searcher:
 if __name__ == "__main__":
 
     # url = "https://www.youtube.com/watch?v=bfHEnw6Rm-4"
-    url = "https://www.youtube.com/watch?v=bfHEnw6Rm-4"
-    query = "qd cre"
-    limit = 5
+    # url = "https://www.youtube.com/watch?v=bfHEnw6Rm-4"
+    url = "https://www.youtube.com/watch?v=4JWG6hmAJpg"
+    query = "idiot"
+    limit = 10
     languages = ['en']
     mode = 'FUZZY'
 

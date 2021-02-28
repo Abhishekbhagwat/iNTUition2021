@@ -5,7 +5,8 @@
   "manifest_version": 3,
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "scripting"
   ],
   "action" : {
     "default_popup" : "popup.html"
@@ -19,6 +20,8 @@
   ],
   "host_permissions": [
     "http://www.localhost:3000/",
-    "https://www.localhost:3000/"
+    "https://www.localhost:3000/",
+    "http://www.localhost:8000/",
+    "https://www.localhost:8000/"
   ]
 }
